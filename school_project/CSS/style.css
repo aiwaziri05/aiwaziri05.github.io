@@ -1,0 +1,89 @@
+/* Import Google Fonts Fontfamily-'Poppins', sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    min-height: 200vh;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+:root {
+    /* ========= colors ========= */
+    --scrollbar-thumb: #333;
+    --scrollbar-track: #111;
+}
+html::-webkit-scrollbar {
+    width: 1rem;
+    background: var(--scrollbar-thumb);
+}
+html::-webkit-scrollbar-thumb {
+    width: 1rem;
+    background: var(--scrollbar-track);
+    border-radius: 5px;
+}
+h1,
+h2 {
+    margin-bottom: 10px;
+}
+a {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+i {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+ul,
+li {
+    position: relative;
+}
+img#new-img {
+    width: 40px;
+    position: relative;
+}
+.carousel-inner {
+    position: relative;
+}
+.carousel-inner::before {
+    /* display: none; */
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1;
+    opacity: 0.6;
+}
+h3#new-h3 {
+    position: relative;
+}
+h3#new-h3::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    bottom: 0;
+    background-color: crimson;
+}
+.card {
+    width: 15rem;
+    background: #fff;
+    border: none;
+    box-shadow: 0 1px 5px #111;
+}
+.card p {
+    font-size: 15px;
+    text-align: left;
+}
+.grid {
+    min-height: 50vh;
+}
+#transparent {
+    opacity: 0.8;
+}

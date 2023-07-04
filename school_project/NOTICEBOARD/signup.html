@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Signup</title>
+</head>
+<body>
+    <form action="signup_process.php" method="post" novalidate>
+        <h1>SignUp</h1>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <div>
+            <label for="rank">Rank:</label>
+            <input type="text" name="rank" placeholder="Enter Rank">
+        </div>
+        <div>
+            <label for="dept">Department:</label>
+            <input type="text" name="dept" placeholder="Enter Department">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <div>
+            <label for="password_confirm">Retype Password:</label>
+            <input type="password" name="password_confirm" placeholder="Retype Password">
+        </div>
+        <button type="submit">SignUp</button>
+    </form>
+</body>
+</html>

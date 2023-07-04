@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html {
+    position: relative;
+    transition: all 200ms ease;
+}
+img {
+    max-height: 200px;
+}
+a:hover {
+    text-decoration: none;
+}
+.dashboard {
+    /* min-height: 100vh; */
+    position: relative;
+    margin: 0;
+    transition: 1s;
+}
+.sidebar { 
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    background: #31303e;
+}
+.sidebar-top {
+    min-height: 280px;
+    /* padding: 8px; */
+    position: relative;
+}
+.col {
+    padding: 2px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    transform: translateX(243px);
+    cursor: pointer;
+    /* transition: .3s; */
+}
+.profile {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #6a5adc;
+    border-radius: 50%;
+    margin: 30px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile img {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: absolute;
+    object-fit: cover;
+    /* z-index: -1; */
+}
+.head {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.sidebar-nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.nav {
+    min-height: 100%;
+    margin: 12px auto;
+    position: relative;
+}
+.nav-list {
+    margin: 20px 0;
+    width: 100%;
+    transition: .3s;
+}
+.nav-list:hover {
+    transform: translateX(-12px);
+}
+.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+.active {
+    color: #6a5adc;
+}
+.nav-link:hover {
+    color: #6a5adc;
+    text-decoration: none;
+}
+.logout {
+    position: absolute;
+    bottom: 1;
+}
+.nav-list span {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    transition: .3s;
+}
+.nav-list:hover span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: #6a5adc;
+}
+.main {
+    width: 100%;
+    position: relative;
+}
+.main-top {
+    min-height: 100px;
+}
+.main-section {
+    position: relative;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 0px; */
+}
+.card {
+    width: 40%;
+    padding: 10px;
+    background: #31303e;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+.card-header {
+    text-align: center;
+}
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+.card-body img {
+    width: 130px;
+    object-fit: contain;
+}
+.card-footer {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+#container {
+    /* min-height: 60vh; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+textarea {
+    width: 320px;
+    height: 150px;
+}
+.btn-group {
+    margin: 25px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-group a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 20px;
+    background: #6a5adc;
+    border-radius: 5px;
+}
+#back {
+    color: #000;
+    background: aqua;
+}
+.add a:hover {
+    text-decoration: none;
+}
+.add span {
+    font-size: 30px;
+    font-weight: 700;
+}
+.btns {
+    min-width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btns a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+#add {
+    background: #2e8b57;
+}
+#delete {
+    background: #dc143c;
+}
+.bnts a:hover {
+    text-decoration: none;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 70px;
+    z-index: 1000;
+    background: #31303e;
+}
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.navbar .logo {
+    width: 25%;
+    position: relative;
+}
+.logo img {
+    width: 50px;
+}
+.logo a {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.navbar-nav {
+    position: relative;
+    display: flex;
+}
+.navbar .nav-list {
+    position: relative;
+    margin: 0 10px;
+}
+table {
+    width: 100%;
+}
+#main-section {
+    padding: 12% 10px;
+}
+#main-section h2 {
+    text-align: center;
+}
+#card-post {
+    width: 100%;
+    display: block;
+    margin: 12px auto;
+}
+#card {
+    display: block;
+}
