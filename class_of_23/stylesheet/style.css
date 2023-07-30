@@ -4,14 +4,14 @@
 :root {
   /* ===== COLORS ===== */
 
-  --main-color: ;
-  --primary-color: ;
+  --main-color: #010718;
+  --primary-color: #4070F4;
   --text-color: #333;
 
   /* ===== FONT CONTROLS ===== */
 
   --regular-font-size: 1.2rem;
-  --sub-heading-font-size: 1.4rem;
+  --brand-logo: 1.2rem;
   --heading-font-size: 2.4rem;
 
   --regular-font: 400;
@@ -42,5 +42,119 @@ body {
   min-height: 100vh;
   position: relative;
   font-family: 'Poppins', sans-serif;
+  font-weight: var(--medium-font);
+  background-color: var(--main-color);
   transition: var(--body-transition);
+}
+
+img {
+  max-width: 80px;
+  vertical-align: middle;
+  margin-right: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-brand {
+  width: 200px;
+  position: relative;
+  padding: 0;
+}
+
+#brand-logo {
+  font-size: var(--brand-logo);
+  font-weight: var(--bold-font);
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #FFF;
+  }
+
+  .navbar {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    background-color: var(--main-color);
+    margin-bottom: 20px;
+  }
+
+  .container {
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  img {
+    max-width: 60px;
+  }
+
+  #brand-logo {
+    font-size: 18px;
+  }
+
+  .heading {
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .heading span {
+    color: var(--primary-color);
+  }
+
+  .input-field {
+    width: 100%;
+    margin: auto;
+  }
+
+  .input-field label {
+    margin-bottom: 10px;
+  }
+  
+  .input-field label span {
+    color: var(--primary-color);
+  }
+
+  .input-field input {
+    padding: 8px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.15s;
+  }
+
+  #submit-button {
+    padding: 8px 40px;
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-weight: var(--medium-font);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.15s;
+  }
+
+  #submit-button:hover {
+    opacity: 0.9;
+  }
 }
