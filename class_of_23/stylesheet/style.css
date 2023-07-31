@@ -154,7 +154,7 @@ img {
     transition: 0.15s;
   }
 
-  #submit-button:hover {
+  #submit-button:active {
     opacity: 0.7;
   }
 

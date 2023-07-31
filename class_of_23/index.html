@@ -26,12 +26,14 @@
         <div id="text-box"></div>
       </div>
       <div class="input-field">
+        <form action="#" name="form1" onsubmit="myFunction()">
         <label for="username">Enter Your <span>name</span></label>
-        <input type="text" placeholder="Enter full name here...">
+        <input type="text" placeholder="Enter full name here..." id="input-text" name="text1">
         <div class="submit">
-        <input type="submit" value="Submit" id="submit-button">
+        <input type="submit" value="Submit" id="submit-button" onsubmit="myFunction()">
         </div>
       </div>
+    </form>
     </div>
   </main>
 
