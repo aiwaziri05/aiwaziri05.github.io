@@ -115,7 +115,7 @@ img {
   }
 
   .heading {
-    margin-bottom: 0;
+    margin-bottom: 15px;
     font-size: 30px;
   }
 
@@ -125,11 +125,13 @@ img {
 
   .input-field {
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
+    margin-top: 0;
   }
 
   .input-field label {
     margin-bottom: 15px;
+    margin-top: 5px;
   }
   
   .input-field label span {
@@ -139,9 +141,13 @@ img {
   .input-field input {
     padding: 8px 15px;
     border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
     transition: 0.15s;
+  }
+
+  .input-field #input-text {
+    margin-bottom: 0;
   }
 
   #submit-button {
@@ -174,5 +180,17 @@ img {
   
   .footer-text span {
     color: var(--primary-color);
+  }
+
+  #nameErr {
+    color: #e4126d;
+    font-size: 16px;
+  }
+
+  #text-box {
+    padding: 5px;
+    margin: 5px auto;
+    width: 100%;
+    word-wrap: break-word;
   }
 }

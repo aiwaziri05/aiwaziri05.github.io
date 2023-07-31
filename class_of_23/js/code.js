@@ -1,17 +1,14 @@
-let empty = document.forms["form1"]["text1"].value,
-    text_box = document.getElementById("text-box"),
-    submit_button = document.getElementById("submit-button"),
-    name = "Abdullahi Waziri";
-  
-    
+function formValidation() {
+    let validate = document.forms["myForm"]["userName"].value,
+        text_box = document.getElementById("text-box"),
+        nameErr = document.getElementById("nameErr");
 
-    function myFunction() {
-      
-        alert("hello")
-      
+    if(validate == "") {
+       nameErr.innerHTML = "Name must be filled out";
+        return false;
+    }else if(validate != "") {
+        text_box.innerHTML = validate;
+        
     }
     
-      
-
-    
-    myFunction();
+}
