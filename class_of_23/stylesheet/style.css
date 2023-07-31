@@ -6,6 +6,7 @@
 
   --main-color: #010718;
   --primary-color: #4070F4;
+  --sec-color: #001C40;
   --text-color: #333;
 
   /* ===== FONT CONTROLS ===== */
@@ -74,6 +75,7 @@ img {
   font-size: var(--brand-logo);
   font-weight: var(--bold-font);
   vertical-align: middle;
+  color: #F5F5F5;
 }
 
 
@@ -90,7 +92,8 @@ img {
 
 @media only screen and (max-width: 600px) {
   body {
-    background: linear-gradient(to left top #4776E6 #8E54E9);
+    /* background-color: var(--sec-color); */
+    background-color: #F5F6F7;
   }
 
   .navbar {
@@ -102,21 +105,33 @@ img {
   }
 
   .container {
-    margin: auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    width: 90%;
   }
 
-  img {
-    max-width: 60px;
+  i {
+    font-size: 30px;
+    padding: 12px 5px;
+    vertical-align: middle;
+    color: var(--primary-color);
   }
 
   #brand-logo {
     font-size: 18px;
   }
 
+  .icon {
+    display: inline-block;
+  }
+
+  .heading-container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   .heading {
-    margin-bottom: 15px;
-    font-size: 30px;
+    font-size: 25px;
+    vertical-align: middle;
   }
 
   .heading span {
@@ -139,6 +154,7 @@ img {
   }
 
   .input-field input {
+    display: block;
     padding: 8px 15px;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -169,8 +185,8 @@ img {
     bottom: 0;
     width: 100%;
     background-color: var(--main-color);
-    color: #f5f5f5;
     padding: 10px 0;
+    color: #F5F5F5;
   }
 
   .footer-text {
