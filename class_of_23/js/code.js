@@ -6,8 +6,8 @@ function formValidation() {
     if(validate == "") {
        nameErr.innerHTML = "Name must be filled out";
         return false;
-    }else if(validate != "") {
-        text_box.innerHTML = validate;
+    }else if(validate != validate) {
+       console.log(validate);
         
     }
     
