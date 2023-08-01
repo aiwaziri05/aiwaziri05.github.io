@@ -212,4 +212,14 @@ img {
     border-radius: 5px;
   }
 
+  #name {
+    display: block;
+    color: var(--primary-color);
+    text-align: center;
+    /* margin: 0 5px; */
+  }
+
+  #span {
+    color: var(--primary-color);
+  }
 }
