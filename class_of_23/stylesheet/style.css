@@ -8,6 +8,7 @@
   --primary-color: #4070F4;
   --sec-color: #001C40;
   --text-color: #333;
+  --body-color: #F5F5F5;
 
   /* ===== FONT CONTROLS ===== */
 
@@ -34,30 +35,21 @@
   box-sizing: border-box;
 }
 
-html {
-
-}
-
 body {
   color: var(--text-color);
   min-height: 100vh;
   position: relative;
   font-family: 'Poppins', sans-serif;
   font-weight: var(--medium-font);
-  background-color: var(--main-color);
+  background-color: var(--body-color);
   transition: var(--body-transition);
-}
-
-img {
-  max-width: 80px;
-  vertical-align: middle;
-  margin-right: 0;
-  padding: 0;
 }
 
 .navbar {
   width: 100%;
   padding: 10px 30px;
+  background-color: var(--main-color);
+  margin-bottom: 30px;
 }
 
 .container {
@@ -78,6 +70,101 @@ img {
   color: #F5F5F5;
 }
 
+i {
+  font-size: 40px;
+  margin-right: 10px;
+  color: var(--primary-color);
+  vertical-align: middle;
+}
+
+.main {
+  margin: auto;
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.heading-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.input-field label {
+  font-size: 20px;
+}
+
+.input-field input {
+  width: 60%;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 8px 15px;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  transition: 0.15s;
+}
+
+#submit-button {
+  padding: 8px 40px;
+  background-color: var(--primary-color);
+  color: #FFF;
+  font-weight: var(--medium-font);
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.15s;
+}
+
+#submit-button:active {
+  opacity: 0.7;
+}
+
+
+#nameErr {
+  color: #e41246;
+  font-size: 16px;
+}
+
+#text-box {
+  width: 100%;
+  padding: 5px;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+
+#name {
+  margin-top: 3px;
+  display: block;
+  color: var(--primary-color);
+  text-align: center;
+  /* margin: 0 5px; */
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 10px 0;
+  color: #F5F5F5;
+}
+
+.footer-text {
+  text-align: center;
+  font-weight: var(--medium-font);
+}
+
+.footer-text span {
+  color: var(--primary-color);
+}
 
 
 
@@ -159,6 +246,7 @@ img {
     display: block;
     padding: 8px 15px;
     border: 2px solid #ccc;
+    outline: none;
     border-radius: 8px;
     margin: 10px 0;
     transition: 0.15s;
@@ -174,6 +262,8 @@ img {
     color: #FFF;
     font-weight: var(--medium-font);
     font-size: 1.1rem;
+    border: none;
+    outline: none;
     cursor: pointer;
     transition: 0.15s;
   }
@@ -213,6 +303,7 @@ img {
   }
 
   #name {
+    margin-top: 3px;
     display: block;
     color: var(--primary-color);
     text-align: center;
